@@ -1,7 +1,7 @@
 # DSP -- Lab 3 (Scilab)
 
 **Trường Đại học Bách khoa - ĐHQG TP.HCM (HCMUT)**  
-**Môn:** Xử lý tín hiệu số (CO2036) | **Học kỳ:** HK262  
+**Môn:** Xử lý tín hiệu số (CO2036) | **Học kỳ:** HK261  
 **Sinh viên:** Đoàn Hiếu Minh (2412036)
 
 ## Nội dung
