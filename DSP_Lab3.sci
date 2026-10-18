@@ -1,17 +1,3 @@
-// ================================================================
-// DIGITAL SIGNAL PROCESSING -- LAB 3
-// Six discrete-time signal operations (function definitions only).
-//
-// Run this entire file in the Scilab console:
-//     exec("DSP_Lab3.sci", -1);
-//
-// This loads the functions without running any examples.
-// Call a function to obtain its output and generate the figure.
-// Every input and output uses a 1-based origin POSITION:
-// the sample at vector position "origin" corresponds to n = 0.
-// An origin position outside the stored vector is also valid.
-// ================================================================
-
 // Draw a readable discrete-time stem plot (integer indices, light grid).
 function plot_signal(samples, origin, heading)
     samples = matrix(samples, 1, -1);
