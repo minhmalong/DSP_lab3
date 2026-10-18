@@ -1,18 +1,3 @@
-// ====================================================================
-// DIGITAL SIGNAL PROCESSING - LAB 3 - ADDITIONAL EXERCISES 2.26-2.35
-// Source: textbook reference, Chapter 2, pp. 136-137.
-//
-// Load once in the Scilab console:
-//     exec("lab3_addition.sci", -1);
-//
-// This script ONLY DEFINES FUNCTIONS; it does not automatically execute
-// test cases, open figures, or print PASS/FAIL messages.
-// Call ex226 ... ex235 to obtain results and their graphical output.
-//
-// Exercise 2.26 and 2.30 have unspecified initial conditions. They are
-// therefore accepted as function parameters, not silently assumed.
-// ====================================================================
-
 // Plot one discrete-time sequence clearly, using integer sample indices.
 function lab3a_plot(n, v, caption)
     n = matrix(n, 1, -1);
@@ -54,9 +39,6 @@ function lab3a_check_nmax(nmax)
 endfunction
 
 // 2.26: Zero-input solution of y(n)-3y(n-1)-4y(n-2)=0.
-// NOTE: The printed book equation starts with x(n), apparently a typo;
-// y(n) is used here to match the intended zero-input system and 2.30.
-// y_minus1 = y(-1), y_minus2 = y(-2), n >= 0.
 function [n, y] = ex226(y_minus1, y_minus2, nmax)
     lab3a_check_nmax(nmax);
     n = 0:nmax;
@@ -210,10 +192,6 @@ function [n, hA, sA, hB, sB] = ex233(nmax)
 endfunction
 
 // 2.34: Causal deconvolution using h(n)=(1/2)^n, 0<=n<=4.
-// Recover x(0)...x(8) from the prescribed y(0)...y(8).
-// IMPORTANT: The returned samples x(0)...x(8) are NOT a claim that
-// x(n)=0 after n=8. Later input samples would be needed to enforce
-// the stipulated zero output for all n>=8.
 function [n, x, target, reconstructed] = ex234()
     n = 0:8;
     target = [1, 2, 2.5, 3, 3, 3, 2, 1, 0];
